@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>flex布局</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .layout.flex{
+                display: flex;
+            }
+            .layout.flex>div{
+                height: 100px;
+            }
+            .layout.flex .left{
+                width: 300px;
+                background: red;
+            }
+            .layout.flex .center{
+                flex: 1;
+                background: green;
+            }
+            .layout.flex .right{
+                width: 300px;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+    <section class="layout flex">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </section>
+    </body>
+</html>

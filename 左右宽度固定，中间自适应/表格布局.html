@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>表格布局</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            .layout.table{
+                display: table;
+                width: 100%;
+            }
+            .layout.table>div{
+                display: table-cell;
+                height: 100px;
+            }
+            .layout.table .left{
+                width: 300px;
+                background: red;
+            }
+            .layout.table .center{
+                background: yellow;
+            }
+            .layout.table .right{
+                width: 300px;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+    <section class="layout table">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </section>
+    </body>
+</html>

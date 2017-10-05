@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>浮动布局</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .layout.float>div{
+               height: 100px;
+            }
+            .layout.float .left{
+                float: left;
+                width: 300px;
+                background: red;
+            }
+            .layout.float .right{
+                float: right;
+                width: 300px;
+                background: blue;
+            }
+            .layout.float .center{
+                margin-left: 300px;
+                margin-right: 300px;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+    <section class="layout float">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center"></div>
+    </section>
+    </body>
+</html>
